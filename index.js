@@ -1,4 +1,9 @@
 require("dotenv").config();
+console.log(
+  "TOKEN:",
+  process.env.TELEGRAM_BOT_TOKEN ? "OK" : "MISSING"
+);
+
 const express = require("express");
 const twilio = require("twilio");
 
